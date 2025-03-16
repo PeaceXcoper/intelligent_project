@@ -18,7 +18,7 @@ output = "movie_data.pkl"  # เปลี่ยนเป็นชื่อไฟ
 gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False)
 
 print(f"Downloaded {output} successfully!")
-with open("model.pkl", "rb") as f:
+with open("movie_data.pkl", "rb") as f:
     model = pickle.load(f)
     
 EXAMPLE_NO = 1
