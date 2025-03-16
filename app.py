@@ -10,6 +10,11 @@ import tensorflow as tf
 import os
 import gdown
 
+file_id2 = "1DieIObGn0_1-bpsy5Lum497vl3EY9K5O"
+output2 = "Image_classify.keras"  # ชื่อไฟล์ที่ต้องการบันทึก
+
+# ดาวน์โหลดไฟล์จาก Google Drive
+gdown.download(f"https://drive.google.com/uc?id={file_id2}", output2, quiet=False, verify=False)
 
 # ใส่ FILE_ID ที่ได้จาก Google Drive
 file_id = "1ggTHWuxw2-I5jcInLhGDH7Zy8VIGa5IQ"
