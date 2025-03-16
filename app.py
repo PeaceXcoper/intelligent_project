@@ -45,7 +45,7 @@ selected = streamlit_menu()
 
 if selected == "Machine Learning":
     st.title("Welcome to the Machine Learning Page")
-    st.write("This is the main landing page of our app.")
+    
     
     
     
