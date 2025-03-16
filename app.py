@@ -12,16 +12,15 @@ import gdown
 
 
 
-# ใส่ FILE_ID ที่ได้จาก Google Drive
-file_id = "1ggTHWuxw2-I5jcInLhGDH7Zy8VIGa5IQ"
-output = "movie_data.pkl"  # เปลี่ยนเป็นชื่อไฟล์ที่ต้องการเซฟ
+
 
 # ดาวน์โหลดไฟล์
-gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False)
+folder_id = "1ggTHWuxw2-I5jcInLhGDH7Zy8VIGa5IQ"  # ใส่ Folder ID ของคุณ
+url = f"https://drive.google.com/drive/folders/{folder_id}"
 
-print(f"Downloaded {output} successfully!")
-with open("movie_data.pkl", "rb") as f:
-    model = pickle.load(f)
+gdown.download_folder(url, output="downloaded_folder", quiet=False)
+
+print("✅ ดาวน์โหลดโฟลเดอร์เสร็จแล้ว!"
     
 EXAMPLE_NO = 1
 
