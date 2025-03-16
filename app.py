@@ -62,7 +62,11 @@ if selected == "Machine Learning":
     3️⃣ ใช้ AI วิเคราะห์ความคล้ายกัน<br>
     4️⃣ แนะนำหนังที่คล้ายกัน 10 เรื่อง
     """,unsafe_allow_html=True)
-     
+
+    code = '''def hello():
+    print("Hello, Streamlit!")'''
+    st.code(code, language="python")
+    
     st.write("1.นำเข้าไลบรารี<br>"
     "pandas : ใช้จัดการข้อมูลตาราง<br>"
     "numpy : ใช้จัดการข้อมูลเชิงตัวเลข<br>"
@@ -76,10 +80,10 @@ if selected == "Machine Learning":
     "movies.csv → ข้อมูลเกี่ยวกับ ชื่อเรื่อง, แนวหนัง, เรื่องย่อ และอื่น ๆ"
     )
     
-    st.image(image3,  use_container_width=True) 
+     
     st.write("รวมข้อมูลจากสองไฟล์เข้าด้วยกันโดยใช้ชื่อภาพยนตร์ (title) เป็นคีย์")
     
-    st.image(image4,  use_container_width=True) 
+     
     st.write("เลือกเฉพาะคอลัมน์ที่จำเป็นสำหรับการแนะนำ")
     
     
