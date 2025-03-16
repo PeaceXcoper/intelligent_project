@@ -1,7 +1,10 @@
-streamlit
-tensorflow-cpu
+streamlit==1.25.0
+tensorflow==2.10.0
 pandas
 requests
 numpy
 pickle5
 streamlit-option-menu
+pip>=24.0
+setuptools>=65.5.0
+wheel
