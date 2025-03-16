@@ -10,18 +10,6 @@ import tensorflow as tf
 import os
 import gdown
 
-
-
-
-
-# ดาวน์โหลดไฟล์
-folder_id = "1ggTHWuxw2-I5jcInLhGDH7Zy8VIGa5IQ"  # ใส่ Folder ID ของคุณ
-url = f"https://drive.google.com/drive/folders/{folder_id}"
-
-gdown.download_folder(url, output="downloaded_folder", quiet=False)
-
-print("✅ ดาวน์โหลดโฟลเดอร์เสร็จแล้ว!"
-    
 EXAMPLE_NO = 1
 
 def streamlit_menu():
