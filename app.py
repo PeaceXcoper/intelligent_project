@@ -11,6 +11,16 @@ import os
 import gdown
 EXAMPLE_NO = 1
 
+file_id = "1DieIObGn0_1-bpsy5Lum497vl3EY9K5O"
+output = "movie_data.pkl"  # เปลี่ยนเป็นชื่อไฟล์ที่ต้องการเซฟ
+
+# ดาวน์โหลดไฟล์
+gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False)
+
+print(f"Downloaded {output} successfully!")
+with open("Image_classify.keras", "rb") as f:
+    model = pickle.load(f)
+
 # ใส่ FILE_ID ที่ได้จาก Google Drive
 file_id = "1ggTHWuxw2-I5jcInLhGDH7Zy8VIGa5IQ"
 output = "movie_data.pkl"  # เปลี่ยนเป็นชื่อไฟล์ที่ต้องการเซฟ
