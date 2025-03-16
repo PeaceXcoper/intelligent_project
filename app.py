@@ -8,7 +8,19 @@ import numpy as np
 from tensorflow.keras.models import load_model
 import tensorflow as tf
 import os
+import gdown
 
+# ใส่ FILE_ID ที่ได้จาก Google Drive
+file_id = "1ggTHWuxw2-I5jcInLhGDH7Zy8VIGa5IQ"
+output = "movie_data.pkl"  # เปลี่ยนเป็นชื่อไฟล์ที่ต้องการเซฟ
+
+# ดาวน์โหลดไฟล์
+gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False)
+
+print(f"Downloaded {output} successfully!")
+with open("model.pkl", "rb") as f:
+    model = pickle.load(f)
+    
 EXAMPLE_NO = 1
 
 def streamlit_menu():
