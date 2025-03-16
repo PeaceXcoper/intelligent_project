@@ -238,11 +238,6 @@ if selected == "Demo Neural Network":
     
     st.title("Demo Neural Network")
     st.header('Image Classification Model')
-    st.title("Demo Neural Network")
-    st.header('Image Classification Model')
-    
-
-
 
     # โหลดโมเดล Keras
     model = tf.keras.models.load_model(output2)
