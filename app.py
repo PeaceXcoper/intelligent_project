@@ -9,19 +9,7 @@ from tensorflow.keras.models import load_model
 import tensorflow as tf
 import os
 import gdown
-# ใส่ Folder ID ที่ต้องการดาวน์โหลด
-folder_id = "1tdNcPzdZXH4yOc4NNPVgFHRY9FMMl4KL"
-url = f"https://drive.google.com/drive/folders/{folder_id}"
 
-# ดาวน์โหลดทั้งโฟลเดอร์
-gdown.download_folder(url, output="downloaded_folder", quiet=False)
-folder_path = "downloaded_folder"
-
-for file_name in os.listdir(folder_path):
-    file_path = os.path.join(folder_path, file_name)
-    if file_path.endswith((".jpg", ".png", ".jpeg")):  # ตรวจสอบว่าเป็นไฟล์รูปภาพ
-        image = Image.open(file_path)
-        st.image(image, caption=file_name, use_column_width=True)
 
 
 # ใส่ FILE_ID ที่ได้จาก Google Drive
